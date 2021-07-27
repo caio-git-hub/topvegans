@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Vegan's</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="./img/top_vegan_logo.png" >
+    </header>
+
+    <section id="menu">
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="#">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="gift-outline"></ion-icon></span>
+              <span class="title">Produtos</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+              <span class="title">Carrinho</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+              <span class="title">Entrar</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+              <span class="title">Sobre</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main>
+      <section id="products">
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="./img/bolsas/bolsa-01.png">
+                </div>
+                <div class="content">
+                    <h2>Bolsas</h2>
+                    <div class="color">
+                        <h3>Cor :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="#">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="card">
+              <div class="img">
+                  <img src="./img/calcados/bota-01.png">
+              </div>
+              <div class="content">
+                  <h2>Calçados</h2>
+                  <div class="size">
+                      <h3>Tamanho :</h3>
+                      <span>36</span>
+                      <span>38</span>
+                      <span>40</span>
+                      <span>41</span>
+                  </div>
+                  <div class="color-shoes">
+                      <h3>Cor :</h3>
+                      <span></span>
+                      <span></span>
+                  </div>
+                  <a href="#">Ver Mais</a>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+              <div class="img">
+                  <img src="./img/cintos/cinto-01.png">
+              </div>
+              <div class="content">
+                  <h2>Cintos</h2>
+                  <div class="color-cinto">
+                      <h3>Cor :</h3>
+                      <span></span>
+                  </div>
+                  <a href="#">Ver Mais</a>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+              <div class="img">
+                  <img src="./img/carteiras/carteira-01.png">
+              </div>
+              <div class="content">
+                  <h2>Carteiras</h2>
+                  <div class="color-carteira">
+                      <h3>Cor :</h3>
+                      <span></span>
+                  </div>
+                  <a href="#">Ver Mais</a>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+      <div class="container-footer">
+        <div class="divFooter">
+          <ol>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+            <li>
+              <a href="quemSomos.html">Quem Somos</a>
+            </li>
+            <li>
+              <a href="privacidade.html">Privacidade</a>
+            </li>
+          </ol>
+        </div>
+        <p>&copy; Grupo 3 </p>
+        <div class="redes">
+          <p>&nbsp;&nbsp; &nbsp; &nbsp; Diga um olá pra gente!</p>
+          <div class="logos">
+            <a target="_blank" href="https://www.facebook.com/">
+              <img src="./img/facebook.svg" alt="facebook" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+              <img src="./img/instagram.svg" alt="instagram" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/">
+              <img src="./img/linkedin.svg" alt="linkedin" />
+            </a>
+            <a target="_blank" href="https://www.youtube.com/">
+              <img src="./img/youtube.svg" alt="youtube" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!- script para os icones -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!- script para a seleção do menu -->
+    <script>
+      const list = document.querySelectorAll(".list");
+
+      function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) =>
+      item.addEventListener("click", activeLink));
+    </script>
+
+  </body>
+</html>
